@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 const Splash = () => {
   const { state } = useContext(Context);
-  return state ? <Redirect to="/" /> : <Login />;
+  return state.isAuth ? <Redirect to="/" /> : <Login />;
 };
 
 export default Splash;
