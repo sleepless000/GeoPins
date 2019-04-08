@@ -6,7 +6,7 @@ const PinSchema = new mongoose.Schema(
     content: String,
     image: String,
     latitude: Number,
-    longtitude: Number,
+    longitude: Number,
     author: { type: mongoose.Schema.ObjectId, ref: 'User' },
     comments: [
       {

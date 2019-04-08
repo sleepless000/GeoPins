@@ -36,7 +36,6 @@ module.exports = gql`
 
   type Query {
     me: User
-    test: String
     getPins: [Pin!]
   }
 

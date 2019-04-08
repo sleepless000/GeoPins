@@ -50,7 +50,7 @@ const CreatePin = ({ classes }) => {
         CREATE_PIN_MUTATION,
         variables
       );
-      console.log('pin created', { createPin });
+      dispatch({ type: 'CREATE_PIN', payload: createPin });
       handleDeleteDraft();
     } catch (err) {
       setSubmitting(false);
