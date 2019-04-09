@@ -1,6 +1,6 @@
-import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ExploreIcon from '@material-ui/icons/Explore';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
 const NoContent = ({ classes }) => (

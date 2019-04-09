@@ -1,11 +1,12 @@
+import { withStyles } from '@material-ui/core/styles';
 import React, { useState, useEffect, useContext } from 'react';
 import ReactMapGL, { NavigationControl, Marker } from 'react-map-gl';
-import { withStyles } from '@material-ui/core/styles';
-import PinIcon from './PinIcon';
+
+import { GET_PINS_QUERY } from '../graphql/queries';
+import { useClient } from '../client';
 import Blog from './Blog';
 import Context from '../context';
-import { useClient } from '../client';
-import { GET_PINS_QUERY } from '../graphql/queries';
+import PinIcon from './PinIcon';
 
 // import Button from "@material-ui/core/Button";
 // import Typography from "@material-ui/core/Typography";

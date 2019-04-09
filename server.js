@@ -1,10 +1,10 @@
+require('dotenv').config();
 const { ApolloServer } = require('apollo-server');
 const mongoose = require('mongoose');
-require('dotenv').config();
 
 const resolvers = require('./resolvers');
 const typeDefs = require('./typeDefs');
-const { findOrCreateUser } = require('./controllers/userContoller');
+const { findOrCreateUser } = require('./controllers/userController');
 
 const server = new ApolloServer({
   typeDefs,

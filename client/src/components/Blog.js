@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import { Paper } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import React, { useContext } from 'react';
+
 import Context from '../context';
-import NoContent from './Pin/NoContent';
 import CreatePin from './Pin/CreatePin';
+import NoContent from './Pin/NoContent';
 
 const Blog = ({ classes }) => {
   const {
